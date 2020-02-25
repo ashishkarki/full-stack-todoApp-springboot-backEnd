@@ -1,4 +1,4 @@
-package com.akarki.todo.rest.todorestfulwebservices.bean;
+package com.akarki.todo.rest.todorestfulwebservices.helloWorld.bean;
 
 import lombok.Data;
 
