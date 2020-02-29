@@ -24,6 +24,19 @@ public class TodoHardcodedService {
 
 	}
 
+	public Todo saveTodo(Todo savedTodo) {
+		if (savedTodo.getId() == -1 || savedTodo.getId() == 0) {
+			// this is a new item and needs to the inserted
+			savedTodo.setId(++idCounter);
+		} else {
+			deleteById(savedTodo.getId());
+		}
+
+		todos.add(savedTodo);
+
+		return savedTodo;
+	}
+
 	public Todo deleteById(long id) {
 		Todo todoToDelete = findById(id);
 
