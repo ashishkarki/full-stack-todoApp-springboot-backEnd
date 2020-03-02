@@ -19,7 +19,7 @@ public class HelloWorldController {
 
 	@GetMapping(path = "hello-world/path-variable/{name}")
 	public HelloWorldBean helloWorldBeanPathVariable(@PathVariable String name) {
-		// return new HelloWorldBean(String.format("Hello World, %s", name));
-		throw new RuntimeException("something happened testing");
+		return new HelloWorldBean(String.format("Hello World, %s", name));
+		// throw new RuntimeException("something happened testing");
 	}
 }

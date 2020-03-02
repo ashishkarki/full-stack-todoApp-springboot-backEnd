@@ -33,8 +33,8 @@ public class TodoResource {
 		return todoService.findById(id);
 	}
 
-	@PutMapping(path = "/users/{username}/todos/{id}")
-	public ResponseEntity<Todo> updateTodo(@PathVariable String username, @PathVariable long id,
+	@PutMapping(path = "/users/{username}/todos/{todo_id}")
+	public ResponseEntity<Todo> updateTodo(@PathVariable String username, @PathVariable long todo_id,
 			@RequestBody Todo todo) {
 		Todo updatedTodo = todoService.saveTodo(todo);
 
