@@ -1,4 +1,4 @@
-package com.akarki.todo.rest.todorestfulwebservices.basic.auth;
+package com.akarki.todo.rest.todorestfulwebservicesIgnore.basic.auth;
 
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;

@@ -8,6 +8,6 @@ public class HelloWorldBean {
 	public HelloWorldBean(String message) {
 		this.message = message;
 	}
-	
+
 	private String message;
 }
